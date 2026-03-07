@@ -29,10 +29,11 @@ func init() {
 	flag.BoolVar(&headless, "headless", true, "是否无头模式")
 	flag.StringVar(&binPath, "bin", "", "浏览器二进制文件路径")
 	flag.StringVar(&port, "port", ":18060", "端口")
-	flag.Parse()
 }
 
 func runServer() {
+	flag.Parse()
+
 	if len(binPath) == 0 {
 		binPath = os.Getenv("ROD_BROWSER_BIN")
 	}

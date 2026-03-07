@@ -9,9 +9,9 @@ import (
 )
 
 var (
-	serverPort      string
-	serverHeadless  bool
-	serverBin       string
+	serverPort     string
+	serverHeadless bool
+	serverBin      string
 )
 
 var serverCmd = &cobra.Command{

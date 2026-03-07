@@ -10,8 +10,8 @@ import (
 var commentContent string
 
 var commentCmd = &cobra.Command{
-	Use:   "comment",
-	Short: "发表评论",
+	Use:     "comment",
+	Short:   "发表评论",
 	Example: `  xhs comment --feed-id "xxx" -c "评论内容"`,
 	Run: func(cmd *cobra.Command, args []string) {
 		ctx := context.Background()

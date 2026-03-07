@@ -8,13 +8,13 @@ import (
 )
 
 var (
-	commentID string
+	commentID   string
 	replyUserID string
 )
 
 var replyCmd = &cobra.Command{
-	Use:   "reply",
-	Short: "回复评论",
+	Use:     "reply",
+	Short:   "回复评论",
 	Example: `  xhs reply --feed-id "xxx" --comment-id "xxx" --user-id "xxx" -c "回复内容"`,
 	Run: func(cmd *cobra.Command, args []string) {
 		ctx := context.Background()
