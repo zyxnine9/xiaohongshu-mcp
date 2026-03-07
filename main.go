@@ -5,14 +5,13 @@ import (
 	"os"
 
 	"github.com/sirupsen/logrus"
-	"github.com/xpzouying/xiaohongshu-mcp/cmd"
 	"github.com/xpzouying/xiaohongshu-mcp/configs"
 )
 
 func main() {
 	// 检查是否有子命令参数，有则运行 CLI
 	if len(os.Args) > 1 {
-		cmd.Execute()
+		Execute()
 		return
 	}
 
